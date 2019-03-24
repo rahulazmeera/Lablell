@@ -3,14 +3,17 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import { ImageEditorComponent } from './image-editor/image-editor.component';
+import {NgxImageEditorModule} from "ngx-image-editor";
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ImageEditorComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgxImageEditorModule
   ],
   providers: [],
   bootstrap: [AppComponent]
